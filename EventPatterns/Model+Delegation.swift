@@ -35,11 +35,9 @@ class DelegationModel {
     
     // MARK: Delegation Example
     
-    func set(title: String, image: UIImage, withDelegation: Bool = false) {
+    func set(title: String, image: UIImage) {
         self.title = title
         self.image = image
-        if withDelegation {
-            delegate?.modelDidUpdate()
-        }
+        delegate?.modelDidUpdate()
     }
 }

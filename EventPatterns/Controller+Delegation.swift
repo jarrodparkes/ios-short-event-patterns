@@ -39,7 +39,7 @@ class DelegationController: UIViewController {
     // MARK: Delegation Example (Triggers Delegation)
     
     @IBAction func updateModel(_ sender: Any) {
-        model.set(title: "Biscuits the Terrier", image: #imageLiteral(resourceName: "biscuits"), withDelegation: true)
+        model.set(title: "Biscuits the Terrier", image: #imageLiteral(resourceName: "biscuits"))
     }
 }
 
