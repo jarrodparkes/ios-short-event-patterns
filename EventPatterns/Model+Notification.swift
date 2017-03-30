@@ -31,6 +31,11 @@ class NotificationModel {
     func set(title: String, image: UIImage) {
         self.title = title
         self.image = image
-        NotificationCenter.default.post(name: Notification.Name("modelDidUpdate"), object: nil)        
+        
+        // emit notification, but don't send any extra data
+        NotificationCenter.default.post(name: Notification.Name("modelDidUpdate"), object: nil)
+        
+        // emit notification, and send extra data
+        // NotificationCenter.default.post(name: Notification.Name("modelDidUpdate"), object: nil, userInfo: ["value": 5])
     }
 }

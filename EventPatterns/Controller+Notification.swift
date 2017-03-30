@@ -49,7 +49,7 @@ class NotificationController: UIViewController {
     
     // MARK: Notification Example (Observe Notification)
     
-    func modelDidUpdate() {
+    func modelDidUpdate(notification: Notification) {        
         setupUI()
     }
 }
